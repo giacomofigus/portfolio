@@ -60,7 +60,7 @@ export default {
         top: 0;
         left: 0;
         right: 0;
-        
+        z-index: 100;
     }
 
     nav{
@@ -69,21 +69,22 @@ export default {
 
         h4{
             color: #CDCDCD;
-            font-size: 23px;
+            font-size: 25px;
             font-weight: 300;
             letter-spacing: 2px;
         }
         h5{
             color: #5B5B5B;
-            font-size: 18px;
+            font-size: 20px;
             letter-spacing: 2px;
         }
         ul{
             gap: 50px;
             li{
                 color: #5B5B5B;
-                font-size: 20px;
+                font-size: 22px;
                 font-weight: 700;
+                z-index: 100;
             }
             li:hover{
                 color: #CDCDCD;
@@ -190,9 +191,9 @@ export default {
                 }
             }
 
-            .propic{
-                filter: drop-shadow(20px 20px 100px #ffffff);
-            }
+            // .propic{
+            //     filter: drop-shadow(20px 20px 100px #ffffff);
+            // }
 
             .sidebar{
                 

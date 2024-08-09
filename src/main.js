@@ -4,4 +4,9 @@ import { router } from './router'
 import './assets/style.css'
 import App from './App.vue'
 
-createApp(App).use(router).mount('#app')
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fas);
+
+createApp(App).component('fa', FontAwesomeIcon).use(router).mount('#app')
