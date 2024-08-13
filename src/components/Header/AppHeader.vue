@@ -137,31 +137,16 @@ export default {
     @media screen and (max-width: 1024px) {
         nav{
             margin-inline: 50px;
+            
         }
     }
 
     @media screen and (max-width: 768px) {
         nav{
             margin-inline: 30px;
-            flex-direction: column;
-            align-items: start;
-            justify-content: space-around;
-
-            ul{
-                margin-left: 5px;
-            }
-
-        }
-    }
-
-    @media screen and (max-width: 425px) {
-        nav{
-            margin-inline: 10px;
-            flex-direction: row;
+            
             align-items: center;
             justify-content: space-between;
-
-            margin-inline: 30px;
 
             h4, h5{
                 display: none;
@@ -191,10 +176,6 @@ export default {
                 }
             }
 
-            // .propic{
-            //     filter: drop-shadow(20px 20px 100px #ffffff);
-            // }
-
             .sidebar{
                 
 
@@ -218,13 +199,30 @@ export default {
                 }
             }
 
+            
+
+            ul{
+                margin-left: 5px;
+            }
+
         }
 
+        
         .active{
             display: block;
             bottom: 0;
             
         }
+    }
 
+    @media screen and (max-width: 425px) {
+        nav{
+            margin-inline: 10px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            margin-inline: 30px;
+        }
     }
 </style>

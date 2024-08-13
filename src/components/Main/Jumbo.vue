@@ -1,6 +1,7 @@
 <script>
   export default {
     name: "Jumbo",
+
   }
 </script>
 
@@ -57,7 +58,7 @@
       grid-auto-rows: 80px; 
       overflow: hidden;
       z-index: 1;
-      height: 100vh;
+      height: 100dvh;
       transform: rotate(180deg);
 
 
@@ -114,9 +115,9 @@
         
 
         h1 {
-          font-size: 55px;
+          font-size: 3.4375rem;
           text-align: center;
-          width: 50%;
+          width: 60%;
           filter: drop-shadow(10px 10px 200px #ffffff);
           transform: rotate(180deg);
 
@@ -184,12 +185,12 @@
   }
   
   @media screen and (max-width: 1024px) {
-    main {
+    .main {
       .bg-squares{
         .jumbo {
           h1 {
             width: 90%;
-            font-size: 45px;
+            font-size: 2.8125rem;
           }
 
           .contactme{
@@ -210,12 +211,12 @@
   }
 
   @media screen and (max-width: 425px) {
-    main {
+    .main {
       .bg-squares{
         .jumbo {
           h1 {
             width: 90%;
-            font-size: 40px;
+            font-size: 2.5rem;
           }
 
           .contactme{
