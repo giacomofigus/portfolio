@@ -1,7 +1,25 @@
 <script>
   export default {
     name: "Jumbo",
-
+    data(){
+      return{
+        email: "figusgiacomo04@gmail.com",
+        isCopied: false,
+        text: "Clicca per copiare"
+      }
+    },
+    methods:{
+      copyMail(){
+        this.isCopied = true;
+        this.text = "Copiato"
+        window.navigator.clipboard.writeText(this.email);
+        if(this.isCopied === true){
+          setTimeout(() => {
+            this.isCopied = false;
+          }, 1500);
+        }
+      }
+    }
   }
 </script>
 
@@ -29,13 +47,22 @@
             <div>
               Contattami:
             </div>
-            <div class="mail">
-              Copia mail
+            <div class="mail relative">
+              <button @click="copyMail()">
+                Copia Mail
+              </button>
+
+              <div class="copied" v-if="isCopied">
+                <fa class="icon check" :icon="['fas', 'clipboard-check']" />
+                <span class="ms-3">{{ this.text }}</span>
+              </div>
             </div>
+
+
           </div>
         </div>
 
-        
+
 
         
       </div>
@@ -110,6 +137,25 @@
             border-radius: 50px;
             height: 50px;
             border: 2px solid white;
+          }
+
+          .copied{
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%);
+            background-color: #555454;
+            top: -50px;
+            width: 120px;
+            border-radius: 5px;
+            padding: 5px;   
+
+            span,
+            .icon{
+              font-size: 16px;
+              font-weight: 300;
+              color: #D9D9D9;
+            }
           }
         }
         

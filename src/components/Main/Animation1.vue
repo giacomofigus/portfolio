@@ -143,7 +143,8 @@
                             span{
                                 display: inline-block;
                                 width: 180px;
-                                
+                                font-size: 20px; 
+                                font-weight: 600; 
                             }
 
                             @keyframes scroll {
@@ -237,7 +238,17 @@
                     width: 100%;
                     .section{
                         .icon{
-                            font-size: 2rem;
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .stack{
+                        .slider{
+                            .slide-track{
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
                         }
                     }
                 }
