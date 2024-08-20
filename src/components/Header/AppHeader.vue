@@ -39,7 +39,9 @@ export default {
                     <a href="#chi-sono">Chi sono</a>
                     
                 </li>
-                <li>Contattami</li>
+                <li>
+                    <a href="#contattami">Contattami</a>
+                </li>
             </ul>
 
             <div class="hamb" @click="menuAction">
@@ -55,7 +57,9 @@ export default {
                     <li>
                         <a href="#chi-sono">Chi sono</a>
                     </li>
-                    <li>Contattami</li>
+                    <li>
+                        <a href="#contattami">Contattami</a>
+                    </li>
                 </ul>
 
             </div>
