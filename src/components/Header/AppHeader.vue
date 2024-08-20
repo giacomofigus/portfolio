@@ -20,17 +20,25 @@ export default {
 <template>
     <header>
         <nav class="flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img class="propic" height="80px" width="80px" src="../../img/propic.png" alt="">
-                <div>
-                    <h4>Giacomo Figus</h4>
-                    <h5>Junior Web Developer</h5>
+            <a href="#home">
+
+                <div class="flex items-center gap-3">
+                    <img class="propic" height="80px" width="80px" src="../../img/propic.png" alt="">
+                    <div>
+                        <h4>Giacomo Figus</h4>
+                        <h5>Junior Web Developer</h5>
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <ul class="menu flex">
-                <li>Progetti</li>
-                <li>Chi sono</li>
+                <li>
+                    <a href="#progetti">Progetti</a>
+                </li>
+                <li>
+                    <a href="#chi-sono">Chi sono</a>
+                    
+                </li>
                 <li>Contattami</li>
             </ul>
 
@@ -43,8 +51,10 @@ export default {
             <div class="sidebar" :class="{ 'active': isActive }">
                 <!-- <img class="bg" src="../../img/bg.png" alt=""> -->
                 <ul>
-                    <li>Progetti</li>
-                    <li>Chi sono</li>
+                    <li><a href="#progetti">Progetti</a></li>
+                    <li>
+                        <a href="#chi-sono">Chi sono</a>
+                    </li>
                     <li>Contattami</li>
                 </ul>
 

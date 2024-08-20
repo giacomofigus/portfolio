@@ -38,7 +38,7 @@
             <span class="gradient-text"> e sono un Full Stack Web Developer</span>
           </h1>
 
-          <a href="#" class="projects-button pulse">
+          <a href="#progetti" class="projects-button pulse">
             I miei progetti
             <fa class="arrow fa" icon="arrow-right" />
           </a>

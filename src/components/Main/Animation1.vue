@@ -6,7 +6,7 @@
 
 <template>
     <div class="container-animation">
-        <section class="who flex flex-col justify-center">
+        <section id="chi-sono" class="who flex flex-col justify-center">
             <h2 class="gradient-text">Chi sono</h2>
 
             <div class="grid-container">
@@ -68,20 +68,6 @@
         section{
             height: 100%;
             padding: 5px;
-            h2 {
-                font-size: 3.4375rem;
-                text-align: center;
-                font-weight: 600;
-                margin-bottom: 30px;
-
-                &.gradient-text {
-                    background: linear-gradient( #FFFFFF, #555454); 
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    text-fill-color: transparent;
-                }
-            }
 
             .grid-container{
                 display: grid;
@@ -200,6 +186,7 @@
                     font-size: 2.8125rem;
                 }
                 .grid-container{
+                    max-width: auto;
                     width: 100%;
                     .section{
                         padding: 30px;
